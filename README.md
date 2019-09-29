@@ -1,3 +1,5 @@
+npm install ganache-cli web3@1.0.0-beta.37 solc@0.5.3
+
 node_modules/.bin/solcjs --bin --abi VendingMachine.sol
 
 Web3 = require('web3')
