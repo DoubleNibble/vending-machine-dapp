@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vending Machine DApp</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="container">
+    <h1>A Simple Vending Machine DApp</h1>
+    <h2>Account Balance: <span id="balance"></span> ether</h2>
+    <div class="machine">
+      <div class="section">
+        <div class="shelves">
+          <div class="shelf">
+            <div class="item" data-item="coke"></div>
+            <div class="details">
+              <div class="detail">
+                <span class="code">F1 (Coke)</span>
+                <span class="quantity">
+                  <span class="">Qty:</span><span id="quantity-Coke"></span>
+                </span>
+                <span class="price">
+                  <span id="price-Coke">1</span><span>ether</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="shelf">
+            <div class="item" data-item="lays"></div>
+            <div class="details">
+              <div class="detail">
+                <span class="code">F2 (Lays)</span>
+                <span class="quantity">
+                  <span class="">Qty:</span><span id="quantity-Lays"></span>
+                </span>
+                <span class="price">
+                  <span id="price-Lays">1.5</span><span>ether</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="shelf">
+            <div class="item" data-item="kitkat"></div>
+            <div class="details">
+              <div class="detail">
+                <span class="code">F3 (Kitkat)</span>
+                <span class="quantity">
+                  <span class="">Qty:</span><span id="quantity-Kitkat"></span>
+                </span>
+                <span class="price">
+                  <span id="price-Kitkat">2</span><span>ether</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="selection"><a>F1</a><a>F2</a><a>F3</a></div>
+      </div>
+      <div class="section">
+        <div class="form">
+          <input
+            type="text"
+            id="selection"
+            required="true"
+            placeholder="XX"
+            disabled
+          />
+          <a href="#" onclick="buyItem()">Vend</a></button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="./index.js"></script>
+</html>
