@@ -6,7 +6,7 @@ abi = JSON.parse(
 );
 
 contract = new web3.eth.Contract(abi);
-contract.options.address = "0xEba62B4aD03463b95315e3a7CFaB3EEb18dfE4d1";
+contract.options.address = "0x5da364cB5F472ba03606cEb06fc89A4d416b31B4";
 // update this contract address with your contract address
 
 items = { F1: "Coke", F2: "Lays", F3: "Kitkat" };
